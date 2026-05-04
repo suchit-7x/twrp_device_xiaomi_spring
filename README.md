@@ -1,7 +1,7 @@
-# device_xiaomi_spring-recovery
+# twrp_device_xiaomi_spring
 
 Recovery tree for this Xiaomi device
-- Xiaomi Redmi _15_ 5G / _15R_ 5G / _POCO M7+_ 5G (codename: `spring`) (August 2025)
+- Xiaomi Redmi _15_ 5G / _15R_ 5G / _POCO M7 Plus_ 5G (codename: `spring`) (August 2025)
 
 ## Device specifications
 
@@ -31,8 +31,7 @@ Display                 | 6.9" FHD+ IPS LCD, 144Hz, 1080x2460
 - [x] Filesystems/Mounts
 - [x] Slot switch
 - [x] Haptics
-- [x] Flashlight
-- [x] Custom splash
+- [] Wlan
 
 ## Notes
 This device does not have a eSIM, meaning that instead of using Secure Element/StrongBox for decryption, 
@@ -48,5 +47,5 @@ This recovery tree was initially made for `spring`. For historical purposes,
 build the `twrp_spring` target
 
 ```shell
-lunch twrp_spring-ap2a-eng && mka adbd recoveryimage
+lunch twrp_spring-bp2a-eng && mka adbd recoveryimage
 ```

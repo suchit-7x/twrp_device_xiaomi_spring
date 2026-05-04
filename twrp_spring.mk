@@ -12,12 +12,9 @@ $(call inherit-product, device/xiaomi/spring/device.mk)
 # Inherit from TWRP common configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Import OrangeFox specifics
-$(call inherit-product, device/xiaomi/spring/fox_spring.mk)
-
 ## Device identifier
 PRODUCT_DEVICE := spring
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi 15 5G / 15R 5G / POCO M7+ 5G
+PRODUCT_MODEL := Redmi 15 5G / 15R 5G / POCO M7 Plus 5G
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := twrp_$(PRODUCT_DEVICE)
+PRODUCT_NAME := twrp_spring
