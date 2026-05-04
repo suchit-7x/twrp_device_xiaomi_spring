@@ -31,7 +31,7 @@ Display                 | 6.9" FHD+ IPS LCD, 144Hz, 1080x2460
 - [x] Filesystems/Mounts
 - [x] Slot switch
 - [x] Haptics
-- [] Wlan
+- [ ] Wlan
 
 ## Notes
 This device does not have a eSIM, meaning that instead of using Secure Element/StrongBox for decryption, 

@@ -96,7 +96,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/recovery/security/miui
+    $(DEVICE_PATH)/security/miui
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
