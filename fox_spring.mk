@@ -49,3 +49,4 @@ OF_FORCE_DATA_FORMAT_F2FS := 1
 
 # Force casefolding to avoid /data issues
 OF_FORCE_CASEFOLDING := 1
+OF_USE_DMCTL := 1
