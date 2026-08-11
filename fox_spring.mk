@@ -50,3 +50,6 @@ OF_FORCE_DATA_FORMAT_F2FS := 1
 # Force casefolding to avoid /data issues
 OF_FORCE_CASEFOLDING := 1
 OF_USE_DMCTL := 1
+
+# Set to 1 to block operations after flashing a ROM i.e. formatting data, flashing other zips etc.
+OF_BLOCK_OPERATIONS_AFTER_ROM_FLASH := 1
