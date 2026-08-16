@@ -22,6 +22,13 @@ do_prep() {
     mkdir -p "$recovery_cache"
 
     if mountpoint -q /metadata || mount /metadata 2>/dev/null; then
+        D="/metadata/ota"
+        LOGMSG "Checking for stale OTA metadata which may block ROM install or formatting..."
+        if [ -d "$D" ]; then
+            LOGMSG "Wiping $D..."
+            rm -rf "$D" 2>/dev/null
+        fi
+        
         for entry in "${metadata_directories[@]}"; do
             IFS=":" read -r path mode owner group <<< "$entry"
             full_path="/metadata/$path"
@@ -44,7 +51,11 @@ backup_fox() {
 		[ -n "$x" ] && return; # standard payload.bin - no need for a backup
 	fi
 
-	source="/dev/block/bootdevice/by-name/recovery";
+    slot="$(getprop ro.boot.slot_suffix)"
+    recovery_partition="recovery"
+    [ -n "$slot" ] && recovery_partition="recovery${slot}"
+
+    source="/dev/block/bootdevice/by-name/$recovery_partition";
 	destination="/tmp/fox_backup.img";
 
 	if [ ! -f $destination ]; then
