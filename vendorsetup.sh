@@ -77,7 +77,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ];
     export USE_CCACHE=1
 
     export LC_ALL="C"
-    export BUILD_USERNAME=chickendrop89
+    export BUILD_USERNAME=suchit
     export BUILD_HOSTNAME=github
 
     # Debugging

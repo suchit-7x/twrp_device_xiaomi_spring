@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 # OrangeFox maintainer
-OF_MAINTAINER := chickendrop89
+OF_MAINTAINER := Suchit
 
 # Screen settings
 OF_SCREEN_H := 2400
